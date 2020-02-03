@@ -2,24 +2,20 @@
 
 using namespace std;
 
-int plus(int a, int b) {
-	//todo implement
-	return 0;
+int add(int a, int b) {
+	return a + b;
 }
 
-int minus(int a, int b) {
-	// todo implement
-	return 0;
+int subtract(int a, int b) {
+	return a - b;
 }
 
 int multiply(int a, int b) {
-	// todo implement
-	return 0;
+	return a * b;
 }
 
 int divide(int a, int b) {
-	//todo implement
-	return 0;
+	return a / b;
 }
 
 void output(int result) {
@@ -41,10 +37,10 @@ int main(int argc, char const *argv[])
 
 	switch(oper) {
 		case '+': 
-			result = plus(a, b);
+			result = add(a, b);
 			break;
 		case '-':
-			result = minus(a, b);
+			result = subtract(a, b);
 			break;
 		case '*': 
 			result = multiply(a, b);
