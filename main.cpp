@@ -18,8 +18,8 @@ int divide(int a, int b) {
 	return a / b;
 }
 
-void output(int result) {
-	//todo implement
+void output(int a, int b, char oper, int result) {
+  cout << a << " " << oper << " " << b << " = " << result << endl;
 }
 
 int main(int argc, char const *argv[])
@@ -50,7 +50,7 @@ int main(int argc, char const *argv[])
 			break;
 	}
 
-	output(result);
+	output(a, b, oper, result);
 	
 	return 0;
 }
