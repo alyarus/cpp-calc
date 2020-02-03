@@ -34,7 +34,7 @@ int main(int argc, char const *argv[])
 	cin >> oper;
 
 	int result = 0;
-
+	bool corrupted = false;
 	switch(oper) {
 		case '+': 
 			result = add(a, b);
@@ -48,9 +48,12 @@ int main(int argc, char const *argv[])
 		case '/':
 			result = divide(a, b);
 			break;
+		default:
+			corrupted = true;
+			break;
 	}
 
-	output(a, b, oper, result);
+	if (!corrupted) output(a, b, oper, result);
 	
 	return 0;
 }
