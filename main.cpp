@@ -48,9 +48,10 @@ int main(int argc, char const *argv[])
 		case '/':
 			result = divide(a, b);
 			break;
-		default:
-			corrupted = true;
-			break;
+    default:
+        	corrupted = true;
+            cout << "unsuported operator " << oper << endl;
+      break;
 	}
 
 	if (!corrupted) output(a, b, oper, result);
